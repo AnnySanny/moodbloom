@@ -47,15 +47,15 @@ export default function CheckIn() {
     great: { en: "Great", ua: "Чудово" },
     good: { en: "Good", ua: "Добре" },
     sad: { en: "Sad", ua: "Сумно" },
-    upset: { en: "Upset", ua: "Засмучений" },
-    angry: { en: "Angry", ua: "Злий" },
-    sleepy: { en: "Sleepy", ua: "Сонний" },
+    upset: { en: "Upset", ua: "Засмучено" },
+    angry: { en: "Angry", ua: "Злість" },
+    sleepy: { en: "Sleepy", ua: "Сонність" },
     bored: { en: "Bored", ua: "Нудно" },
-    annoyed: { en: "Annoyed", ua: "Роздратований" },
-    surprised: { en: "Surprised", ua: "Здивований" },
-    calm: { en: "Calm", ua: "Спокійний" },
-    anxious: { en: "Anxious", ua: "Тривожний" },
-    excited: { en: "Excited", ua: "Схвильований" },
+    annoyed: { en: "Annoyed", ua: "Роздратовано" },
+    surprised: { en: "Surprised", ua: "Здивовано" },
+    calm: { en: "Calm", ua: "Спокійно" },
+    anxious: { en: "Anxious", ua: "Тривожно" },
+    excited: { en: "Excited", ua: "Схвильовано" },
   };
 
   const handleSave = async () => {

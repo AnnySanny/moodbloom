@@ -32,16 +32,16 @@ export default function Journal() {
   const moodTranslations = {
     great: { en: "Great", ua: "Чудово" },
     good: { en: "Good", ua: "Добре" },
-    excited: { en: "Excited", ua: "Схвильований" },
-    calm: { en: "Calm", ua: "Спокійний" },
-    surprised: { en: "Surprised", ua: "Здивований" },
+    excited: { en: "Excited", ua: "Схвильовано" },
+    calm: { en: "Calm", ua: "Спокійно" },
+    surprised: { en: "Surprised", ua: "Здивовано" },
     sad: { en: "Sad", ua: "Сумно" },
-    anxious: { en: "Anxious", ua: "Тривожний" },
-    upset: { en: "Upset", ua: "Засмучений" },
-    angry: { en: "Angry", ua: "Злий" },
-    annoyed: { en: "Annoyed", ua: "Роздратований" },
+    anxious: { en: "Anxious", ua: "Тривожно" },
+    upset: { en: "Upset", ua: "Засмучено" },
+    angry: { en: "Angry", ua: "Злість" },
+    annoyed: { en: "Annoyed", ua: "Роздратовано" },
     bored: { en: "Bored", ua: "Нудно" },
-    sleepy: { en: "Sleepy", ua: "Сонний" },
+    sleepy: { en: "Sleepy", ua: "Сонність" },
   };
 
   const days =
