@@ -28,7 +28,7 @@ export default function AboutChat() {
     transition-colors duration-300
   "
 >
-      <h3 className="text-[20px] mb-8 font-semibold tracking-wide">
+      <h3 className="text-[20px] mb-8 Montserrat tracking-wide">
         {lang === "en" ? "About This Chat" : "Про цей чат"}
       </h3>
 
@@ -80,8 +80,8 @@ export default function AboutChat() {
 
           <p className="text-[14px] opacity-80 leading-relaxed">
             {lang === "en"
-              ? "This chat provides supportive guidance but does not replace professional psychological care."
-              : "Цей чат надає підтримуючі поради, але не замінює професійну психологічну допомогу."}
+              ? "This chat provides supportive guidance but does not replace professional psychological care. We recommend choosing one of the quick themes and choosing the suggested options for the best effect."
+              : "Цей чат надає підтримуючі поради, але не замінює професійну психологічну допомогу. Рекомендуємо обрати одну з швидких тем та обирати запропоновані варіанти для кращого ефекту. "}
           </p>
         </div>
       </div>

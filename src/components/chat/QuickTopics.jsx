@@ -20,18 +20,58 @@ export default function QuickTopics({ onSelect }) {
     cursor-pointer
   `;
 
-  const topics = [
-    { en: "Tell me about my mood patterns", ua: "Розкажи про мої патерни настрою" },
-    { en: "I need some motivation", ua: "Мені потрібна мотивація" },
-    { en: "I'm feeling stressed today", ua: "Сьогодні я відчуваю стрес" },
-    { en: "How can I cope with anxiety?", ua: "Як впоратися з тривожністю?" },
-    { en: "Why do I feel emotionally drained?", ua: "Чому я почуваюся емоційно виснаженим?" },
-    { en: "Help me calm down right now", ua: "Допоможи мені заспокоїтися зараз" },
-    { en: "How can I improve my sleep?", ua: "Як покращити мій сон?" },
-    { en: "I feel unproductive lately", ua: "Останнім часом я почуваюся непродуктивним" },
-    { en: "Give me a short breathing exercise", ua: "Дай мені коротку дихальну вправу" },
-    { en: "How do I handle overthinking?", ua: "Як впоратися з надмірними думками?" },
-  ];
+const topics = [
+  {
+    key: "moodPatterns",
+    en: "Tell me about my mood patterns",
+    ua: "Розкажи про мої патерни настрою"
+  },
+  {
+    key: "motivation",
+    en: "I need some motivation",
+    ua: "Мені потрібна мотивація"
+  },
+  {
+    key: "todayStress",
+    en: "I'm feeling stressed today",
+    ua: "Сьогодні я відчуваю стрес"
+  },
+  {
+    key: "anxiety",
+    en: "How can I cope with anxiety?",
+    ua: "Як впоратися з тривожністю?"
+  },
+  {
+    key: "emotionalExhaustion",
+    en: "Why do I feel emotionally drained?",
+    ua: "Чому я почуваюся емоційно виснаженим?"
+  },
+  {
+    key: "calmNow",
+    en: "Help me calm down right now",
+    ua: "Допоможи мені заспокоїтися зараз"
+  },
+  {
+    key: "improveSleep",
+    en: "How can I improve my sleep?",
+    ua: "Як покращити мій сон?"
+  },
+  {
+    key: "lowProductivity",
+    en: "I feel unproductive lately",
+    ua: "Останнім часом я почуваюся непродуктивним"
+  },
+  {
+    key: "breathingExercise",
+    en: "Give me a short breathing exercise",
+    ua: "Дай мені коротку дихальну вправу"
+  },
+  {
+    key: "overthinking",
+    en: "How do I handle overthinking?",
+    ua: "Як впоратися з надмірними думками?"
+  }
+];
 
   return (
 <div
@@ -54,7 +94,7 @@ export default function QuickTopics({ onSelect }) {
         {topics.map((topic, i) => (
           <span
             key={i}
-            onClick={() => onSelect(lang === "en" ? topic.en : topic.ua)}
+            onClick={() => onSelect({ key: topic.key, time: Date.now() })}
             className={hoverClass}
           >
             {lang === "en" ? topic.en : topic.ua}

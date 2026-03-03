@@ -67,7 +67,7 @@ export default function Sidebar() {
         <div>
           <h2
             className="text-[28px] leading-tight"
-            style={{ fontFamily: "Playfair Display, serif" }}
+            style={{ fontFamily: "Montserrat, serif" }}
           >
             MoodBloom
           </h2>
@@ -76,7 +76,7 @@ export default function Sidebar() {
             className="text-[14px] italic opacity-70"
             style={{ fontFamily: "Dancing Script, cursive" }}
           >
-            {lang === "en" ? "Mental Health Tracker" : "Трекер настрою"}
+            Mental Health Tracker
           </p>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function Sidebar() {
               <span
                 className="text-[16px]"
                 style={{
-                  fontFamily: "Goldman, sans-serif",
+                  fontFamily: "Montserrat, sans-serif",
                   letterSpacing: "0.5px",
                 }}
               >

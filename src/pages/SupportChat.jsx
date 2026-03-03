@@ -16,12 +16,11 @@ export default function SupportChat() {
           mb-10
         "
       >
-        <QuickTopics onSelect={setSelectedTopic} />
+<QuickTopics onSelect={setSelectedTopic} />
         <AboutChat />
       </div>
 
       <ChatBox externalMessage={selectedTopic} />
-
     </div>
   );
 }
